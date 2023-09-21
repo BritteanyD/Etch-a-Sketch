@@ -9,6 +9,9 @@ for (let i = 0; i < 16; i++) {
         const grid = document.createElement('div');
         grid.classList.add('grid');
 
+        grid.style.width = '960px';
+        grid.style.height = '960px';
+
         container.appendChild(grid);
     }
 }
