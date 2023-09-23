@@ -8,16 +8,17 @@ for (let i = 0; i < 16; i++) {
     for (let j = 0; j < 16; j++) {
         const grid = document.createElement('div');
         grid.classList.add('grid');
-
         grid.style.width = '20px';
         grid.style.height = '20px';
         grid.style['background-color'] = 'red';
         grid.style.border = 'solid';
         grid.style.display = 'flex';
-        
 
         container.appendChild(grid);
 
-        console.log('grid')
+        grid.addEventListener('mouseover', () => {
+            grid.style['background-color'] = 'blue';
+        });
+
     }
 }
