@@ -1,12 +1,14 @@
+let size;
+
 const btn = document.querySelector('button');
 btn.addEventListener('click', () => {
-    prompt('Enter your board size by choosing a number between 1 and 50');
+    size = prompt('Enter your board size by choosing a number between 1 and 50');
     if (size >= 1 && size <= 50) {
         createGrid(size);
     } else {
         alert('Please enter a valid size between 1 and 50');
     }
-});
+})
 
 function createGrid(size) {
     const container = document.getElementById('container');
