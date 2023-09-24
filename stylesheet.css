@@ -11,7 +11,6 @@ h1 {
 #container {
     width: 600px;
     height: 600px;
-    margin-left: 650px;
     display: grid;
     grid-template-rows: repeat(16, 1fr);
     grid-template-columns: repeat(16, 1fr);
@@ -21,6 +20,12 @@ h1 {
         -5px -5px 20px 0 rgb(232, 222, 222);
     background: rgb(206, 224, 246);
     border-radius: 10px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 html {
