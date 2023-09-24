@@ -20,14 +20,12 @@ function createGrid(size, size) {
     for (let i = 0; i < (size * size); i++) {
             const grid = document.createElement('div');
             grid.classList.add('grid');
-            grid.style.width = '20px';
-            grid.style.height = '20px';
-            grid.style['background-color'] = 'red';
+            grid.style.width = '100%';
+            grid.style.height = '100%';
+            grid.style['background-color'] = 'pink';
             grid.style.border = 'solid';
-            grid.display = 'grid';
 
             container.appendChild(grid);
-            container.classList.add('box');
 
             grid.addEventListener('mouseover', () => {
                 grid.style['background-color'] = 'blue';
